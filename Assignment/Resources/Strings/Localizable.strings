@@ -6,3 +6,8 @@ remote_not_found = "Could not find any data from server";
 //Titles
 error = "Error";
 ok = "OK";
+
+//General
+planet_name = "Name: %@";
+current_climate = "Current climate is %@";
+planet_image_url = "https://picsum.photos/seed/%@/200";

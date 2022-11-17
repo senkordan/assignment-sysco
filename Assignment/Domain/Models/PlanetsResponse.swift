@@ -8,14 +8,14 @@
 import Foundation
 
 struct PlanetsResponse: Codable {
-    var results: [Planets]?
+    var results: [Planet]?
 
     enum CodingKeys: String, CodingKey {
        case results = "results"
     }
 }
 
-struct Planets: Codable {
+struct Planet: Codable {
    
     var name: String?
     var orbitalPeriod: String?

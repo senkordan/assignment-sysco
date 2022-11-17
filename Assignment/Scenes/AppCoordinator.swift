@@ -27,7 +27,7 @@ final class AppCoordinator: Coordinator {
         navigationController.pushViewController(PlanetDetailsViewController, animated: true)
     }
     
-    func showPlanetDetails() {
+    func showPlanetDetails(with planet: Planet) {
         let PlanetDetailsViewController = StoryboardScene.PlanetDetails.initialScene.instantiate()
         let planetDetailsViewModel = PlanetDetailsViewModel.init()
         planetDetailsViewModel.coordinator = self

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PlanetDetailsViewController: UIViewController {
+class PlanetDetailsViewController: RootViewController {
 
     var viewModel: PlanetDetailsViewModel!
     

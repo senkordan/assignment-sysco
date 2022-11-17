@@ -44,6 +44,13 @@
 		ACCD9FC7292626F300A5A8A3 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC6292626F300A5A8A3 /* UIFontExtension.swift */; };
 		ACCD9FCA2926278100A5A8A3 /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */; };
 		ACCD9FCF292628C900A5A8A3 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FCE292628C900A5A8A3 /* UIViewControllerExtension.swift */; };
+		ACCD9FD129262B6E00A5A8A3 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FD029262B6E00A5A8A3 /* UITableViewExtension.swift */; };
+		ACCD9FD329262C2300A5A8A3 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FD229262C2300A5A8A3 /* ErrorTracker.swift */; };
+		ACCD9FD529262D7F00A5A8A3 /* RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FD429262D7F00A5A8A3 /* RxExtension.swift */; };
+		ACCD9FD929262EA800A5A8A3 /* PlanetListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FD729262EA800A5A8A3 /* PlanetListingTableViewCell.swift */; };
+		ACCD9FDA29262EA800A5A8A3 /* PlanetListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9FD829262EA800A5A8A3 /* PlanetListingTableViewCell.xib */; };
+		ACCD9FDD2926730F00A5A8A3 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9FDB2926730F00A5A8A3 /* OpenSans-Regular.ttf */; };
+		ACCD9FDE2926730F00A5A8A3 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9FDC2926730F00A5A8A3 /* OpenSans-SemiBold.ttf */; };
 		C7971ECBEC9C40A210876B24 /* Pods_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67077E6CCE5859CBCDB15CD2 /* Pods_Assignment.framework */; };
 		D1F01C5D7F9866B7499CA02C /* Pods_Assignment_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDE095EDD68B221D51BBB2A /* Pods_Assignment_AssignmentUITests.framework */; };
 		ED9779ADB50C15C7587B3AFE /* Pods_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A099146059C42C0613873C /* Pods_AssignmentTests.framework */; };
@@ -113,6 +120,13 @@
 		ACCD9FC6292626F300A5A8A3 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
 		ACCD9FCE292628C900A5A8A3 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		ACCD9FD029262B6E00A5A8A3 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		ACCD9FD229262C2300A5A8A3 /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		ACCD9FD429262D7F00A5A8A3 /* RxExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtension.swift; sourceTree = "<group>"; };
+		ACCD9FD729262EA800A5A8A3 /* PlanetListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListingTableViewCell.swift; sourceTree = "<group>"; };
+		ACCD9FD829262EA800A5A8A3 /* PlanetListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetListingTableViewCell.xib; sourceTree = "<group>"; };
+		ACCD9FDB2926730F00A5A8A3 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		ACCD9FDC2926730F00A5A8A3 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		ADDE095EDD68B221D51BBB2A /* Pods_Assignment_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90126D825F70C51F72585E8 /* Pods-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Assignment/Pods-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		DAFE9F54230AE55EC8C3F3D2 /* Pods-Assignment-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Assignment-AssignmentUITests/Pods-Assignment-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +195,7 @@
 				AC03E1232924D0D5000B6629 /* Scenes */,
 				AC03E0F42924C757000B6629 /* LaunchScreen.storyboard */,
 				AC03E0F72924C757000B6629 /* Info.plist */,
+				ACCD9FD229262C2300A5A8A3 /* ErrorTracker.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -247,6 +262,7 @@
 		AC03E13529254B4C000B6629 /* PlanetListing */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD9FD629262E8F00A5A8A3 /* Cells */,
 				AC03E13729254CCB000B6629 /* PlanetListing.storyboard */,
 				AC03E13B292555B5000B6629 /* PlanetListingViewController.swift */,
 				AC03E13D292555E3000B6629 /* PlanetListingViewModel.swift */,
@@ -316,6 +332,8 @@
 				ACCD9FA32926183400A5A8A3 /* Reusable.swift */,
 				ACCD9FB72926227A00A5A8A3 /* ErrorExtension.swift */,
 				ACCD9FC6292626F300A5A8A3 /* UIFontExtension.swift */,
+				ACCD9FD029262B6E00A5A8A3 /* UITableViewExtension.swift */,
+				ACCD9FD429262D7F00A5A8A3 /* RxExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -352,6 +370,8 @@
 		ACCD9FB92926245400A5A8A3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD9FDB2926730F00A5A8A3 /* OpenSans-Regular.ttf */,
+				ACCD9FDC2926730F00A5A8A3 /* OpenSans-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -362,6 +382,15 @@
 				ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		ACCD9FD629262E8F00A5A8A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FD729262EA800A5A8A3 /* PlanetListingTableViewCell.swift */,
+				ACCD9FD829262EA800A5A8A3 /* PlanetListingTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F273C00F954ED13CFE15F8E1 /* Pods */ = {
@@ -498,10 +527,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC03E12D29254694000B6629 /* Localizable.strings in Resources */,
+				ACCD9FDE2926730F00A5A8A3 /* OpenSans-SemiBold.ttf in Resources */,
 				AC03E0F62924C757000B6629 /* LaunchScreen.storyboard in Resources */,
 				ACCD9FB42926203700A5A8A3 /* Colors.txt in Resources */,
+				ACCD9FDA29262EA800A5A8A3 /* PlanetListingTableViewCell.xib in Resources */,
 				AC03E13829254CCB000B6629 /* PlanetListing.storyboard in Resources */,
 				AC03E13A29254CE1000B6629 /* PlanetDetails.storyboard in Resources */,
+				ACCD9FDD2926730F00A5A8A3 /* OpenSans-Regular.ttf in Resources */,
 				AC03E0F32924C757000B6629 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +689,7 @@
 				AC03E15C2925F40C000B6629 /* AppConfigurations.swift in Sources */,
 				ACCD9FBB292624CB00A5A8A3 /* Fonts.swift in Sources */,
 				AC03E1552925F2A0000B6629 /* PlanetsResponse.swift in Sources */,
+				ACCD9FD529262D7F00A5A8A3 /* RxExtension.swift in Sources */,
 				AC03E14F2925E9E9000B6629 /* AppApiClient.swift in Sources */,
 				AC03E14D2925E739000B6629 /* AppError.swift in Sources */,
 				AC03E1402925562D000B6629 /* PlanetDetailsViewController.swift in Sources */,
@@ -667,13 +700,16 @@
 				ACCD9FA42926183400A5A8A3 /* Reusable.swift in Sources */,
 				AC03E0EA2924C755000B6629 /* AppDelegate.swift in Sources */,
 				ACCD9FC3292625A600A5A8A3 /* FontSize.swift in Sources */,
+				ACCD9FD329262C2300A5A8A3 /* ErrorTracker.swift in Sources */,
 				AC03E15E2925F6FF000B6629 /* UseCases.swift in Sources */,
 				ACCD9FC12926255100A5A8A3 /* TypographyStyle.swift in Sources */,
 				AC03E13229254AB9000B6629 /* StoryboardScenes.swift in Sources */,
+				ACCD9FD929262EA800A5A8A3 /* PlanetListingTableViewCell.swift in Sources */,
 				ACCD9FC52926268D00A5A8A3 /* StringAttributes.swift in Sources */,
 				AC03E1512925F1EE000B6629 /* ApiService.swift in Sources */,
 				ACCD9FB82926227A00A5A8A3 /* ErrorExtension.swift in Sources */,
 				AC03E145292558BE000B6629 /* Coordinator.swift in Sources */,
+				ACCD9FD129262B6E00A5A8A3 /* UITableViewExtension.swift in Sources */,
 				ACCD9FCA2926278100A5A8A3 /* PrimaryLabel.swift in Sources */,
 				ACCD9FBF2926251600A5A8A3 /* Strings.swift in Sources */,
 			);
