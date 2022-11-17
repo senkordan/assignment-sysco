@@ -15,7 +15,6 @@
 		AC03E10D2924C757000B6629 /* AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03E10C2924C757000B6629 /* AssignmentUITestsLaunchTests.swift */; };
 		AC03E12D29254694000B6629 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC03E12C29254694000B6629 /* Localizable.strings */; };
 		AC03E13229254AB9000B6629 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03E12F29254AB8000B6629 /* StoryboardScenes.swift */; };
-		AC03E13329254AB9000B6629 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03E13029254AB8000B6629 /* Strings+Generated.swift */; };
 		AC03E13429254AB9000B6629 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03E13129254AB9000B6629 /* Assets.swift */; };
 		AC03E13829254CCB000B6629 /* PlanetListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC03E13729254CCB000B6629 /* PlanetListing.storyboard */; };
 		AC03E13A29254CE1000B6629 /* PlanetDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC03E13929254CE1000B6629 /* PlanetDetails.storyboard */; };
@@ -32,6 +31,19 @@
 		AC03E1552925F2A0000B6629 /* PlanetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03E1542925F2A0000B6629 /* PlanetsResponse.swift */; };
 		AC03E15C2925F40C000B6629 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03E15B2925F40C000B6629 /* AppConfigurations.swift */; };
 		AC03E15E2925F6FF000B6629 /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03E15D2925F6FF000B6629 /* UseCases.swift */; };
+		ACCD9FA42926183400A5A8A3 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FA32926183400A5A8A3 /* Reusable.swift */; };
+		ACCD9FAB29261DBA00A5A8A3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FAA29261DBA00A5A8A3 /* RootViewController.swift */; };
+		ACCD9FB42926203700A5A8A3 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9FB32926203700A5A8A3 /* Colors.txt */; };
+		ACCD9FB6292621AA00A5A8A3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FB5292621AA00A5A8A3 /* Colors.swift */; };
+		ACCD9FB82926227A00A5A8A3 /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FB72926227A00A5A8A3 /* ErrorExtension.swift */; };
+		ACCD9FBB292624CB00A5A8A3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FBA292624CB00A5A8A3 /* Fonts.swift */; };
+		ACCD9FBF2926251600A5A8A3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FBE2926251600A5A8A3 /* Strings.swift */; };
+		ACCD9FC12926255100A5A8A3 /* TypographyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC02926255100A5A8A3 /* TypographyStyle.swift */; };
+		ACCD9FC3292625A600A5A8A3 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC2292625A600A5A8A3 /* FontSize.swift */; };
+		ACCD9FC52926268D00A5A8A3 /* StringAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC42926268D00A5A8A3 /* StringAttributes.swift */; };
+		ACCD9FC7292626F300A5A8A3 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC6292626F300A5A8A3 /* UIFontExtension.swift */; };
+		ACCD9FCA2926278100A5A8A3 /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */; };
+		ACCD9FCF292628C900A5A8A3 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FCE292628C900A5A8A3 /* UIViewControllerExtension.swift */; };
 		C7971ECBEC9C40A210876B24 /* Pods_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67077E6CCE5859CBCDB15CD2 /* Pods_Assignment.framework */; };
 		D1F01C5D7F9866B7499CA02C /* Pods_Assignment_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDE095EDD68B221D51BBB2A /* Pods_Assignment_AssignmentUITests.framework */; };
 		ED9779ADB50C15C7587B3AFE /* Pods_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A099146059C42C0613873C /* Pods_AssignmentTests.framework */; };
@@ -72,7 +84,6 @@
 		AC03E10C2924C757000B6629 /* AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AC03E12C29254694000B6629 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		AC03E12F29254AB8000B6629 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
-		AC03E13029254AB8000B6629 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		AC03E13129254AB9000B6629 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		AC03E13729254CCB000B6629 /* PlanetListing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanetListing.storyboard; sourceTree = "<group>"; };
 		AC03E13929254CE1000B6629 /* PlanetDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanetDetails.storyboard; sourceTree = "<group>"; };
@@ -89,6 +100,19 @@
 		AC03E1542925F2A0000B6629 /* PlanetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsResponse.swift; sourceTree = "<group>"; };
 		AC03E15B2925F40C000B6629 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
 		AC03E15D2925F6FF000B6629 /* UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
+		ACCD9FA32926183400A5A8A3 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		ACCD9FAA29261DBA00A5A8A3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		ACCD9FB32926203700A5A8A3 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		ACCD9FB5292621AA00A5A8A3 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ACCD9FB72926227A00A5A8A3 /* ErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
+		ACCD9FBA292624CB00A5A8A3 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		ACCD9FBE2926251600A5A8A3 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		ACCD9FC02926255100A5A8A3 /* TypographyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographyStyle.swift; sourceTree = "<group>"; };
+		ACCD9FC2292625A600A5A8A3 /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		ACCD9FC42926268D00A5A8A3 /* StringAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAttributes.swift; sourceTree = "<group>"; };
+		ACCD9FC6292626F300A5A8A3 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
+		ACCD9FCE292628C900A5A8A3 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		ADDE095EDD68B221D51BBB2A /* Pods_Assignment_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90126D825F70C51F72585E8 /* Pods-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Assignment/Pods-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		DAFE9F54230AE55EC8C3F3D2 /* Pods-Assignment-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Assignment-AssignmentUITests/Pods-Assignment-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +172,7 @@
 		AC03E0E82924C755000B6629 /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD9FA729261D9300A5A8A3 /* UI */,
 				ACCD9FA2292616A300A5A8A3 /* Extensions */,
 				AC03E1522925F206000B6629 /* Domain */,
 				AC03E1492925E5B7000B6629 /* Networking */,
@@ -190,7 +215,9 @@
 		AC03E12A2925466E000B6629 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD9FB32926203700A5A8A3 /* Colors.txt */,
 				AC03E0F22924C757000B6629 /* Assets.xcassets */,
+				ACCD9FB92926245400A5A8A3 /* Fonts */,
 				AC03E12E29254A58000B6629 /* Generated */,
 				AC03E12B29254681000B6629 /* Strings */,
 			);
@@ -208,9 +235,11 @@
 		AC03E12E29254A58000B6629 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD9FBE2926251600A5A8A3 /* Strings.swift */,
+				ACCD9FBA292624CB00A5A8A3 /* Fonts.swift */,
+				ACCD9FB5292621AA00A5A8A3 /* Colors.swift */,
 				AC03E13129254AB9000B6629 /* Assets.swift */,
 				AC03E12F29254AB8000B6629 /* StoryboardScenes.swift */,
-				AC03E13029254AB8000B6629 /* Strings+Generated.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -284,8 +313,55 @@
 		ACCD9FA2292616A300A5A8A3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD9FA32926183400A5A8A3 /* Reusable.swift */,
+				ACCD9FB72926227A00A5A8A3 /* ErrorExtension.swift */,
+				ACCD9FC6292626F300A5A8A3 /* UIFontExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACCD9FA729261D9300A5A8A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FA929261DA500A5A8A3 /* Widgets */,
+				ACCD9FA829261D9A00A5A8A3 /* Typography */,
+				ACCD9FCE292628C900A5A8A3 /* UIViewControllerExtension.swift */,
+				ACCD9FAA29261DBA00A5A8A3 /* RootViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ACCD9FA829261D9A00A5A8A3 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FC02926255100A5A8A3 /* TypographyStyle.swift */,
+				ACCD9FC2292625A600A5A8A3 /* FontSize.swift */,
+				ACCD9FC42926268D00A5A8A3 /* StringAttributes.swift */,
+			);
+			path = Typography;
+			sourceTree = "<group>";
+		};
+		ACCD9FA929261DA500A5A8A3 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FC82926276E00A5A8A3 /* Label */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		ACCD9FB92926245400A5A8A3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		ACCD9FC82926276E00A5A8A3 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 		F273C00F954ED13CFE15F8E1 /* Pods */ = {
@@ -423,6 +499,7 @@
 			files = (
 				AC03E12D29254694000B6629 /* Localizable.strings in Resources */,
 				AC03E0F62924C757000B6629 /* LaunchScreen.storyboard in Resources */,
+				ACCD9FB42926203700A5A8A3 /* Colors.txt in Resources */,
 				AC03E13829254CCB000B6629 /* PlanetListing.storyboard in Resources */,
 				AC03E13A29254CE1000B6629 /* PlanetDetails.storyboard in Resources */,
 				AC03E0F32924C757000B6629 /* Assets.xcassets in Resources */,
@@ -572,22 +649,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC03E13C292555B5000B6629 /* PlanetListingViewController.swift in Sources */,
+				ACCD9FB6292621AA00A5A8A3 /* Colors.swift in Sources */,
 				AC03E14229255645000B6629 /* PlanetDetailsViewModel.swift in Sources */,
+				ACCD9FAB29261DBA00A5A8A3 /* RootViewController.swift in Sources */,
 				AC03E14829255DB5000B6629 /* AppCoordinator.swift in Sources */,
 				AC03E13E292555E3000B6629 /* PlanetListingViewModel.swift in Sources */,
 				AC03E15C2925F40C000B6629 /* AppConfigurations.swift in Sources */,
-				AC03E13329254AB9000B6629 /* Strings+Generated.swift in Sources */,
+				ACCD9FBB292624CB00A5A8A3 /* Fonts.swift in Sources */,
 				AC03E1552925F2A0000B6629 /* PlanetsResponse.swift in Sources */,
 				AC03E14F2925E9E9000B6629 /* AppApiClient.swift in Sources */,
 				AC03E14D2925E739000B6629 /* AppError.swift in Sources */,
 				AC03E1402925562D000B6629 /* PlanetDetailsViewController.swift in Sources */,
+				ACCD9FCF292628C900A5A8A3 /* UIViewControllerExtension.swift in Sources */,
+				ACCD9FC7292626F300A5A8A3 /* UIFontExtension.swift in Sources */,
 				AC03E13429254AB9000B6629 /* Assets.swift in Sources */,
 				AC03E14B2925E5E3000B6629 /* ApiEndpoint.swift in Sources */,
+				ACCD9FA42926183400A5A8A3 /* Reusable.swift in Sources */,
 				AC03E0EA2924C755000B6629 /* AppDelegate.swift in Sources */,
+				ACCD9FC3292625A600A5A8A3 /* FontSize.swift in Sources */,
 				AC03E15E2925F6FF000B6629 /* UseCases.swift in Sources */,
+				ACCD9FC12926255100A5A8A3 /* TypographyStyle.swift in Sources */,
 				AC03E13229254AB9000B6629 /* StoryboardScenes.swift in Sources */,
+				ACCD9FC52926268D00A5A8A3 /* StringAttributes.swift in Sources */,
 				AC03E1512925F1EE000B6629 /* ApiService.swift in Sources */,
+				ACCD9FB82926227A00A5A8A3 /* ErrorExtension.swift in Sources */,
 				AC03E145292558BE000B6629 /* Coordinator.swift in Sources */,
+				ACCD9FCA2926278100A5A8A3 /* PrimaryLabel.swift in Sources */,
+				ACCD9FBF2926251600A5A8A3 /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

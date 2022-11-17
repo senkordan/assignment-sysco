@@ -1,0 +1,4 @@
+MediumGrey  : #7D7D7D
+Black       : #000000
+White       : #FFFFFF
+Primary     : #6BB442

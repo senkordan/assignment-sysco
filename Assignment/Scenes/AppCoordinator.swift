@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class AppCoordinator {
+final class AppCoordinator: Coordinator {
     
     var parentCoordinator: Coordinator?
     var children: [Coordinator] = []

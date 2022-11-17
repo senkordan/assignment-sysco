@@ -21,12 +21,12 @@ final class PlanetListingViewModel {
     
     func fetchPlanets(){
         useCases.fetchPlanets()
-                    .subscribe(onSuccess: { [weak self] response in
-                       print("sddasdsdasd", response)
-                        }, onError: { [weak self] error in
-                            print("sddasdsdasd", error)
-                    })
-                    .disposed(by: disposeBag)
+            .subscribe(onSuccess: { [weak self] response in
+                print("Fetching planet success", response)
+            }, onError: { [weak self] error in
+                print("Fetching planes failed", error)
+            })
+            .disposed(by: disposeBag)
     }
     
 }

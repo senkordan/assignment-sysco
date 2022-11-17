@@ -13,8 +13,6 @@ class PlanetListingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("aasffafsdfsdfsfd")
-        // Do any additional setup after loading the view.
     }
 
 }

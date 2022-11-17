@@ -11,6 +11,7 @@ target 'Assignment' do
   pod 'RxCocoa', '6.2.0'
   pod 'SDWebImage', '~> 5.0'
   pod 'Alamofire', '~> 5.4'
+  pod 'SVProgressHUD'
   
   target 'AssignmentTests' do
     inherit! :search_paths

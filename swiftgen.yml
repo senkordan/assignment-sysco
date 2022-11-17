@@ -3,7 +3,7 @@ strings:
    - Assignment/Resources/Strings/Localizable.strings
   outputs:
    - templateName: structured-swift5
-     output: Assignment/Resources/Generated/Strings+Generated.swift
+     output: Assignment/Resources/Generated/Strings.swift
 
 xcassets:
   inputs:
@@ -20,3 +20,15 @@ ib:
   outputs:
     - templateName: scenes-swift5
       output: Assignment/Resources/Generated/StoryboardScenes.swift
+
+colors:
+    paths:
+    - Assignment/Resources/Colors.txt
+    templateName: swift5
+    output: Assignment/Resources/Generated/Colors.swift
+
+fonts:
+    paths:
+    - Assignment/Resources/Fonts
+    templateName: swift4
+    output: Assignment/Resources/Generated/Fonts.swift

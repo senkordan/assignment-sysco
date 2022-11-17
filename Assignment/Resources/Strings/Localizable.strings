@@ -2,3 +2,7 @@
 general_error_message = "Something went wrong, Please try again later!";
 no_internet_message = "Active internet connection not found. Please connect to WIFI or Data";
 remote_not_found = "Could not find any data from server";
+
+//Titles
+error = "Error";
+ok = "OK";
