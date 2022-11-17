@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+final class PlanetDetailsViewModel {
+    
+    weak var coordinator: AppCoordinator!
+    
+    init() {}
+    
+}

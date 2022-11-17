@@ -1,0 +1,22 @@
+strings:
+  inputs:
+   - Assignment/Resources/Strings/Localizable.strings
+  outputs:
+   - templateName: structured-swift5
+     output: Assignment/Resources/Generated/Strings+Generated.swift
+
+xcassets:
+  inputs:
+    - Assignment/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      params:
+        forceProvidesNamespaces: true
+      output: Assignment/Resources/Generated/Assets.swift
+
+ib:
+  inputs:
+    - .
+  outputs:
+    - templateName: scenes-swift5
+      output: Assignment/Resources/Generated/StoryboardScenes.swift

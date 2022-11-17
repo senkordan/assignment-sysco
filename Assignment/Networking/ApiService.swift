@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+enum ApiServices {
+    
+    static var baseURL: URL {
+        return URL(string: AppConfigurations.BASE_URL)!
+    }
+}
+
+extension ApiServices {
+    
+    static func fetchPlanets() -> ApiEndpoint<PlanetsResponse> {
+        return ApiEndpoint(url: ApiServices.baseURL.appendingPathComponent("planets"))
+    }
+    
+}

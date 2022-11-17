@@ -9,7 +9,7 @@ import Foundation
 
 enum AppError: Error {
     case general
-    case noInternet
+    case remoteNotFound
     case errorMessage(String)
 }
 
@@ -19,8 +19,8 @@ extension AppError: LocalizedError {
         switch self {
         case .errorMessage(let message):
             return message
-        case .noInternet:
-            return L10n.noInternetMessage
+        case .remoteNotFound:
+            return L10n.remoteNotFound
         default:
             return L10n.generalErrorMessage
         }

@@ -6,3 +6,80 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+import UIKit
+import Alamofire
+
+protocol ApiClient {
+    func request<Response: Decodable>(_ endpoint: ApiEndpoint<Response>) -> Single<Response>
+}
+
+final class AppApiClient: ApiClient {
+    
+    static var shared = AppApiClient()
+
+    private let session: URLSession = {
+        let sessionConfig = URLSessionConfiguration.default
+        sessionConfig.timeoutIntervalForRequest = AppConfigurations.TIME_OUT_INTERVAL
+        let session = URLSession(configuration: sessionConfig)
+        return session
+    }()
+
+    private var urlSessionDataTask: URLSessionDataTask?
+    
+    func request<Response: Decodable>(_ endpoint: ApiEndpoint<Response>) -> Single<Response> {
+        return Single<Response>.create { observer in
+        
+            let urlRequest = self.prepareRequest(endpoint: endpoint)
+            
+            //Cancelling if any pending url session tasks
+            self.urlSessionDataTask?.cancel()
+            
+            self.urlSessionDataTask = self.session.dataTask(with: urlRequest) { data, response, error in
+               
+                if let data = data {
+                    let parsedResponse: SingleEvent<Response> = self.parseResponse(data)
+                    observer(parsedResponse)
+                } else if let error = error {
+                    //Could't do any error hanling like 404, 500, since api returns those form data and those are not in a speicfic format.
+                    observer(.failure(AppError.errorMessage(error.localizedDescription)))
+                }
+            }
+            
+            //Starting any tasks in suspended states
+            self.urlSessionDataTask?.resume()
+            
+            return Disposables.create()
+        }
+    }
+    
+    private func parseResponse<Response: Decodable>(_ response: Data) -> SingleEvent<Response> {
+      
+        guard let parsedResult: Response = try? JSONDecoder().decode(Response.self, from: response) else {
+            return .failure(AppError.general)
+        }
+        return .success(parsedResult)
+    }
+        
+    private func prepareRequest<Response>(endpoint: ApiEndpoint<Response>) -> URLRequest {
+        
+        var urlComponents = URLComponents(url: endpoint.url, resolvingAgainstBaseURL: false)!
+        
+        if let queryStrings = endpoint.queryStrings {
+            urlComponents.queryItems = queryStrings.map { (key: String, value: Any) in
+                return URLQueryItem(name: key, value: "\(value)")
+            }
+        }
+        var urlRequest = URLRequest(url: urlComponents.url!)
+        urlRequest.httpMethod = endpoint.method.rawValue
+        
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        if let body = endpoint.body {
+            urlRequest.httpBody = body
+        }
+        return urlRequest
+    }
+}
+
