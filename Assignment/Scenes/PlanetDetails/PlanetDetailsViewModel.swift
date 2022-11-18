@@ -13,7 +13,11 @@ final class PlanetDetailsViewModel {
     
     weak var coordinator: AppCoordinator!
     
-    let planetDetails = PublishSubject<Planet>()
+    let planetDetails: BehaviorRelay<Planet>
+    
+    init(planet: Planet) {
+        planetDetails = BehaviorRelay<Planet>(value: planet)
+    }
     
     func goBack() {
         coordinator.goBack()

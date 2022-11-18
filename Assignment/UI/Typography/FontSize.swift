@@ -15,11 +15,11 @@ struct FontSize {
     /// - Returns: UIFont with specifc size and font family
     static func font(for typographyStyle: TypographyStyle) -> UIFont {
         switch typographyStyle {
-            case .Heading:
+            case .heading:
                 return semiBold(size: 18.0)
-            case .SubHeading:
+            case .subHeading:
                 return semiBold(size: 15.0)
-            case .Body:
+            case .body:
                 return regualr(size: 15.0)
         }
     }

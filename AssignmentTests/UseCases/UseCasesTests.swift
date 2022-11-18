@@ -24,16 +24,16 @@ final class UseCasesTests: XCTestCase {
         useCases = AppUseCases()
     }
     
-    func testFetchPlanetsHasCorrentValue() {
-        // arrange
+    func testFetchPlanetsHasCorrentResponse() {
+        /// arrange
         apiClient.responseValue = Single.just(TestUtils.stubbedResponse(responseJsonFileName: "planet_results",
                                                                         responseClass: PlanetsResponse.self,
                                                                         classType: type(of: self)))
 
-        // act
+        /// act
         let planetResponse = try! useCases.fetchPlanets().toBlocking().first()!
 
-        // assert
+        /// assert
         XCTAssertEqual(planetResponse.results?.count, 10)
     }
     

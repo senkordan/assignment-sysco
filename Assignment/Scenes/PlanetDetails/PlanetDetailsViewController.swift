@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import SDWebImage
 
 class PlanetDetailsViewController: RootViewController {
     
@@ -13,19 +16,19 @@ class PlanetDetailsViewController: RootViewController {
     
     @IBOutlet weak var planetNameLabel: Label! {
         didSet {
-            planetNameLabel.set(typographyStyle: .Heading, alignment: .center)
+            planetNameLabel.set(typographyStyle: .heading, alignment: .center)
         }
     }
     
     @IBOutlet weak var climateLabel: Label! {
         didSet {
-            climateLabel.set(typographyStyle: .Body, alignment: .center)
+            climateLabel.set(typographyStyle: .subHeading, alignment: .center)
         }
     }
     
     @IBOutlet weak var orbitalPeriodLabel: Label! {
         didSet {
-            orbitalPeriodLabel.set(typographyStyle: .Body, alignment: .center)
+            orbitalPeriodLabel.set(typographyStyle: .subHeading, alignment: .center)
         }
     }
     
@@ -37,13 +40,28 @@ class PlanetDetailsViewController: RootViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        bind()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         showNavBar(leftItem: backButtonItem)
         setNavigationBarTitleWith(L10n.appName)
+    }
+    
+    private func bind() {
+        
+        _ = viewModel
+            .planetDetails
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { planetDetails in
+                
+                self.planetNameLabel.setText(planetDetails.name ?? "")
+                self.climateLabel.setText(L10n.climateTitle(planetDetails.climate ?? ""))
+                self.orbitalPeriodLabel.setText(L10n.orbitalPersionTitle(planetDetails.orbitalPeriod ?? ""))
+                self.thumbIimageView.sd_setImage(with: URL(string: L10n.planetImageUrl(planetDetails.name ?? "")), placeholderImage:Asset.placeholder.image)
+                
+            }).disposed(by: disposeBag)
     }
     
     @objc private func onBackButtonClicked() {

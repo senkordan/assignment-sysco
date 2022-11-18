@@ -13,13 +13,13 @@ class PlanetListingTableViewCell: UITableViewCell {
     
     @IBOutlet weak var planetNameLebel: Label! {
         didSet {
-            planetNameLebel.set(typographyStyle: .Heading)
+            planetNameLebel.set(typographyStyle: .heading)
         }
     }
     
     @IBOutlet weak var climateLabel: Label! {
         didSet {
-            climateLabel.set(typographyStyle: .SubHeading)
+            climateLabel.set(typographyStyle: .subHeading)
         }
     }
     

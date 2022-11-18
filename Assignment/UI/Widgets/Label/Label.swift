@@ -9,7 +9,7 @@ import UIKit
 
 class Label: UILabel {
     
-    private var attributes = StringAttributes.attributes(for: .Body)
+    private var attributes = StringAttributes.attributes(for: .body)
     
     private var typograpyStyle: TypographyStyle!
     private var alignment: NSTextAlignment!
@@ -66,7 +66,7 @@ class Label: UILabel {
     func setText(_ text: String,
                  withColoredTextSections coloredSections: [String], color: UIColor = ColorName.mediumGrey.color) {
         
-        let attributes = StringAttributes.attributes(for: .SubHeading, alignment: .left)
+        let attributes = StringAttributes.attributes(for: .subHeading, alignment: .left)
         
         let attributedFullString = NSMutableAttributedString(string: text,
                                                              attributes: attributes)

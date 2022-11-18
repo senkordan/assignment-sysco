@@ -38,11 +38,11 @@ struct StringAttributes {
         switch typographyStyle {
             
         /// Color: Black
-        case .Heading, .SubHeading:
+        case .heading, .subHeading:
             return ColorName.black
        
         /// Color: MediumGrey
-        case .Body:
+        case .body:
             return ColorName.mediumGrey
 
         }

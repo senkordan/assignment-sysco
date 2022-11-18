@@ -9,16 +9,11 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-extension ObservableType where Element == Bool {
-    // Boolean not operator
-    public func not() -> Observable<Bool> {
-        return self.map(!)
-    }
-}
-
-extension SharedSequenceConvertibleType {
-    func mapToVoid() -> SharedSequence<SharingStrategy, Void> {
-        return map { _ in }
+extension Reactive where Base: Label {
+    var text: Binder<String?> {
+        return Binder(base) { label, text in
+            label.setText(text ?? "")
+        }
     }
 }
 

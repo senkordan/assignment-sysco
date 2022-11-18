@@ -42,7 +42,7 @@
 		ACCD9FC3292625A600A5A8A3 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC2292625A600A5A8A3 /* FontSize.swift */; };
 		ACCD9FC52926268D00A5A8A3 /* StringAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC42926268D00A5A8A3 /* StringAttributes.swift */; };
 		ACCD9FC7292626F300A5A8A3 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC6292626F300A5A8A3 /* UIFontExtension.swift */; };
-		ACCD9FCA2926278100A5A8A3 /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */; };
+		ACCD9FCA2926278100A5A8A3 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FC92926278100A5A8A3 /* Label.swift */; };
 		ACCD9FCF292628C900A5A8A3 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FCE292628C900A5A8A3 /* UIViewControllerExtension.swift */; };
 		ACCD9FD129262B6E00A5A8A3 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FD029262B6E00A5A8A3 /* UITableViewExtension.swift */; };
 		ACCD9FD329262C2300A5A8A3 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FD229262C2300A5A8A3 /* ErrorTracker.swift */; };
@@ -123,7 +123,7 @@
 		ACCD9FC2292625A600A5A8A3 /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		ACCD9FC42926268D00A5A8A3 /* StringAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAttributes.swift; sourceTree = "<group>"; };
 		ACCD9FC6292626F300A5A8A3 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
-		ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
+		ACCD9FC92926278100A5A8A3 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		ACCD9FCE292628C900A5A8A3 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		ACCD9FD029262B6E00A5A8A3 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		ACCD9FD229262C2300A5A8A3 /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
@@ -392,7 +392,7 @@
 		ACCD9FC82926276E00A5A8A3 /* Label */ = {
 			isa = PBXGroup;
 			children = (
-				ACCD9FC92926278100A5A8A3 /* PrimaryLabel.swift */,
+				ACCD9FC92926278100A5A8A3 /* Label.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -776,7 +776,7 @@
 				ACCD9FB82926227A00A5A8A3 /* ErrorExtension.swift in Sources */,
 				AC03E145292558BE000B6629 /* Coordinator.swift in Sources */,
 				ACCD9FD129262B6E00A5A8A3 /* UITableViewExtension.swift in Sources */,
-				ACCD9FCA2926278100A5A8A3 /* PrimaryLabel.swift in Sources */,
+				ACCD9FCA2926278100A5A8A3 /* Label.swift in Sources */,
 				ACCD9FBF2926251600A5A8A3 /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
