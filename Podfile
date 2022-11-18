@@ -10,12 +10,12 @@ target 'Assignment' do
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
   pod 'SDWebImage', '~> 5.0'
-  pod 'Alamofire', '~> 5.4'
   pod 'SVProgressHUD'
   
   target 'AssignmentTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '6.2.0'
   end
 
   target 'AssignmentUITests' do

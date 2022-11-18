@@ -10,6 +10,12 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// Planets
+  internal static let appName = L10n.tr("Localizable", "app_name", fallback: "Planets")
+  /// Climate: %@
+  internal static func climateTitle(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "climate_title", String(describing: p1), fallback: "Climate: %@")
+  }
   /// Current climate is %@
   internal static func currentClimate(_ p1: Any) -> String {
     return L10n.tr("Localizable", "current_climate", String(describing: p1), fallback: "Current climate is %@")
@@ -22,6 +28,10 @@ internal enum L10n {
   internal static let noInternetMessage = L10n.tr("Localizable", "no_internet_message", fallback: "Active internet connection not found. Please connect to WIFI or Data")
   /// OK
   internal static let ok = L10n.tr("Localizable", "ok", fallback: "OK")
+  /// Orbital period: %@
+  internal static func orbitalPersionTitle(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "orbital_persion_title", String(describing: p1), fallback: "Orbital period: %@")
+  }
   /// https://picsum.photos/seed/%@/200
   internal static func planetImageUrl(_ p1: Any) -> String {
     return L10n.tr("Localizable", "planet_image_url", String(describing: p1), fallback: "https://picsum.photos/seed/%@/200")

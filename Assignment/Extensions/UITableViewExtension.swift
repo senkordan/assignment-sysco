@@ -9,7 +9,7 @@ import UIKit
 
 extension UITableView {
     
-    // MARK: - Register Cells
+    /// MARK: - Register Cells
     
     func registerClass<T: UITableViewCell>(forCell type: T.Type) {
         let className = String(describing: type)
@@ -31,7 +31,7 @@ extension UITableView {
         register(type.nib, forHeaderFooterViewReuseIdentifier: className)
     }
     
-    // MARK: - Dequeue Cells
+    /// MARK: - Dequeue Cells
     
     func dequeueReusableCell<T: UITableViewCell>(_ type: T.Type) -> T {
         let className = String(describing: type)

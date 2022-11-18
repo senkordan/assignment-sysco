@@ -8,11 +8,17 @@
 import Foundation
 import RxSwift
 
-class UseCases {
-    
+protocol UseCases {
+    func fetchPlanets() -> Single<PlanetsResponse>
+}
+
+class AppUseCases {
     private let apiClient = AppApiClient()
+}
+
+extension AppUseCases: UseCases {
     
-    func fetchPlanets() -> Single<PlanetsResponse> {
+    func fetchPlanets()-> Single<PlanetsResponse>{
         return apiClient.request(ApiServices.fetchPlanets())
     }
 }

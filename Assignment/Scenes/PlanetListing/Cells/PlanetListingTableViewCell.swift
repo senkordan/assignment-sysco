@@ -36,6 +36,8 @@ class PlanetListingTableViewCell: UITableViewCell {
         thumbImageView.image = nil
     }
     
+    /// Set planet details to the cell
+    /// - Parameter planet: seleted planet description
     func setData(_ planet: Planet) {
         planetNameLebel.setText(L10n.planetName(planet.name ?? ""))
         climateLabel.setText(L10n.currentClimate(planet.climate ?? ""))

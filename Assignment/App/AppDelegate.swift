@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    //Launching app with parent coordinator
+    /// Launching app with parent coordinator
     private func launchApp() {
         window = UIWindow(frame: UIScreen.main.bounds)
         let navigationCon = UINavigationController.init()

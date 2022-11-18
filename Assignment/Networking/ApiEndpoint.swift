@@ -9,7 +9,6 @@ import Foundation
 
 typealias Parameters = [String: Any]
 typealias Headers = [String: String]
-typealias Path = String
 
 enum HTTPMethod: String {
     case get = "GET"
@@ -19,6 +18,7 @@ enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
+/// This builds essential data that help to creater url request
 struct ApiEndpoint<Response> {
     let method: HTTPMethod
     let url: URL

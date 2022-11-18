@@ -20,6 +20,12 @@ extension UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
+    /// Sets componets of navigation bar
+    /// - Parameters:
+    ///   - leftItem: left nav bar items
+    ///   - rightItem: right navbat items
+    ///   - clearBackground: defines whether tansculant or not
+    ///   - animated: adding default animation
     func showNavBar(leftItem: NavBarItem? = nil,
                     rightItem: [NavBarItem]? = nil,
                     clearBackground: Bool = false,
@@ -49,6 +55,8 @@ extension UIViewController {
         navigationItem.setLeftBarButton(leftBarButtonItem, animated: false)
     }
     
+    /// Sets a customized view in title area
+    /// - Parameter titleView: customized view
     func setNavBarTitleItem(_ titleView: UIView) {
         navigationItem.titleView = titleView
     }
@@ -80,17 +88,12 @@ extension UIViewController {
         navigationController?.view.backgroundColor = .clear
     }
     
+    /// Sets tile to nav var
+    /// - Parameter navTitle: title
     func setNavigationBarTitleWith(_ navTitle: String) {
         navigationItem.title = navTitle
     }
     
-    func setCustomNavigationBarView(_ view: UIView) {
-        navigationController?.navigationBar.addSubview(view)
-    }
-    
-    func removeNavigationBarView(_ view: UIView) {
-        view.removeFromSuperview()
-    }
     
     func barButtonItemFor(navItem: NavBarItem?) -> UIBarButtonItem? {
         

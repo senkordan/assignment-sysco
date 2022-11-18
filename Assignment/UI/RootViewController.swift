@@ -16,6 +16,7 @@ class RootViewController: UIViewController {
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
     
+    /// Reative wat to show error messages error emits
     var errorBinding: Binder<Error> {
         return Binder(self, binding: { (vc, error) in
            self.showErrorMessage(errorMessage: error.parse())
@@ -38,6 +39,8 @@ class RootViewController: UIViewController {
         super.viewWillDisappear(animated)
     }
     
+    /// Show error as alert dialogs
+    /// - Parameter errorMessage: error message
     func showErrorMessage(errorMessage: String) {
         let alert = UIAlertController(title: L10n.error, message: errorMessage, preferredStyle: .alert)
         

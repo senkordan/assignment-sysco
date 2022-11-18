@@ -16,6 +16,8 @@ enum ApiServices {
 
 extension ApiServices {
     
+    /// Fetheches list of availabe planets
+    /// - Returns: list of planets as results
     static func fetchPlanets() -> ApiEndpoint<PlanetsResponse> {
         return ApiEndpoint(url: ApiServices.baseURL.appendingPathComponent("planets"))
     }

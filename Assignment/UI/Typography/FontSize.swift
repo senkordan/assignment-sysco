@@ -9,7 +9,10 @@ import Foundation
 import UIKit
 
 struct FontSize {
-   
+    
+    /// Sets font size for each typography styles
+    /// - Parameter typographyStyle: typographyStyle
+    /// - Returns: UIFont with specifc size and font family
     static func font(for typographyStyle: TypographyStyle) -> UIFont {
         switch typographyStyle {
             case .Heading:

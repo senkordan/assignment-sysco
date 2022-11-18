@@ -1,5 +1,6 @@
 PODS:
-  - Alamofire (5.6.1)
+  - RxBlocking (6.2.0):
+    - RxSwift (= 6.2.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
@@ -13,7 +14,7 @@ PODS:
   - SwiftGen (6.6.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.4)
+  - RxBlocking (= 6.2.0)
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
   - SDWebImage (~> 5.0)
@@ -22,7 +23,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Alamofire
+    - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -31,7 +32,7 @@ SPEC REPOS:
     - SwiftGen
 
 SPEC CHECKSUMS:
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  RxBlocking: 0b29f7d2079109a8de49c411381bed7c33ef1eeb
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
@@ -39,6 +40,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
 
-PODFILE CHECKSUM: 4adee06ad318b5b55a226c84185de4af6dca84e1
+PODFILE CHECKSUM: b830b7f29435df7612b0697bc0c4c2d48b543fc4
 
 COCOAPODS: 1.11.3

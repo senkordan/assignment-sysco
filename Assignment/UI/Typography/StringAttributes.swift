@@ -9,6 +9,11 @@ import UIKit
 
 struct StringAttributes {
     
+    /// Dictonary of Attributes strings. Holds font, color, aligment
+    /// - Parameters:
+    ///   - typographyStyle: typographyStyle
+    ///   - alignment: alignment
+    /// - Returns: Attributed strings
     static func attributes(for typographyStyle: TypographyStyle,
                            alignment: NSTextAlignment = .left) -> [NSAttributedString.Key: Any] {
         
@@ -25,15 +30,18 @@ struct StringAttributes {
         return attributes
     }
     
+    /// sets color for each typography styles
+    /// - Parameter typographyStyle: typographyStyle
+    /// - Returns: UIcolor
     private static func colorsForTypographyStyles(for typographyStyle: TypographyStyle) -> ColorName {
         
         switch typographyStyle {
             
-        // Color: Black
+        /// Color: Black
         case .Heading, .SubHeading:
             return ColorName.black
        
-        // Color: MediumGrey
+        /// Color: MediumGrey
         case .Body:
             return ColorName.mediumGrey
 

@@ -8,6 +8,9 @@ error = "Error";
 ok = "OK";
 
 //General
+app_name = "Planets";
 planet_name = "Name: %@";
 current_climate = "Current climate is %@";
 planet_image_url = "https://picsum.photos/seed/%@/200";
+climate_title = "Climate: %@";
+orbital_persion_title = "Orbital period: %@";

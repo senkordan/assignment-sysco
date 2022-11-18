@@ -29,17 +29,24 @@ class Label: UILabel {
         numberOfLines = 0
     }
     
-    // Must be called after setting the attributed text
+    /// Must be called after setting the attributed text
     func setNumberOfLines(_ numOfLines: Int, breakMode: NSLineBreakMode = .byTruncatingTail) {
         numberOfLines = numOfLines
         lineBreakMode = breakMode
     }
-
+    
+    /// This can be called after assigning typography style to set text directly
+    /// - Parameter text: text to be set
     func setText(_ text: String) {
         self.text = text
         setLetterSpacing()
     }
     
+    /// This will be called initially to assign a typograply style, text and alignment to the custom label
+    /// - Parameters:
+    ///   - text: text to be set
+    ///   - typographyStyle: This holds the color, font and font size
+    ///   - alignment: aligment
     func set(_ text: String = "", typographyStyle: TypographyStyle, alignment: NSTextAlignment = .left) {
         self.typograpyStyle = typographyStyle
         self.alignment = alignment
@@ -50,7 +57,12 @@ class Label: UILabel {
         
         setLetterSpacing()
     }
-
+    
+    /// This helps to higlight texts in a specific ranges
+    /// - Parameters:
+    ///   - text: Initials text that needs to be highlighted in specific ranges
+    ///   - coloredSections: texts that needs to be higlighted
+    ///   - color: higlight color
     func setText(_ text: String,
                  withColoredTextSections coloredSections: [String], color: UIColor = ColorName.mediumGrey.color) {
         
@@ -71,6 +83,7 @@ class Label: UILabel {
         accessibilityLabel = text
     }
     
+    /// set letter spacing
     func setLetterSpacing() {
         let attributedString = NSMutableAttributedString(string: self.text ?? "", attributes: self.attributes)
         
@@ -83,6 +96,9 @@ class Label: UILabel {
         attributedText = attributedString
     }
     
+    /// Set letter spacing for each typography style
+    /// - Parameter typographyStyle: typograpy style
+    /// - Returns: letter spacing value
     private func letterSpacingForTypographyStyle(for typographyStyle: TypographyStyle) -> CGFloat {
         switch typographyStyle {
             

@@ -18,21 +18,23 @@ final class AppCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
+    ///launching planet listing view controller as landing screen
     func start() {
-        //launching planet listing view controller as landing screen
-        let PlanetDetailsViewController = StoryboardScene.PlanetListing.initialScene.instantiate()
+        let planetDetailsViewController = StoryboardScene.PlanetListing.initialScene.instantiate()
         let planetListingViewModel = PlanetListingViewModel.init()
         planetListingViewModel.coordinator = self
-        PlanetDetailsViewController.viewModel = PlanetListingViewModel()
-        navigationController.pushViewController(PlanetDetailsViewController, animated: true)
+        planetDetailsViewController.viewModel = planetListingViewModel
+        navigationController.pushViewController(planetDetailsViewController, animated: true)
     }
     
+    /// Show planet detauls
+    /// - Parameter planet: selected planet details
     func showPlanetDetails(with planet: Planet) {
-        let PlanetDetailsViewController = StoryboardScene.PlanetDetails.initialScene.instantiate()
+        let planetDetailsViewController = StoryboardScene.PlanetDetails.initialScene.instantiate()
         let planetDetailsViewModel = PlanetDetailsViewModel.init()
         planetDetailsViewModel.coordinator = self
-        PlanetDetailsViewController.viewModel = planetDetailsViewModel
-        navigationController.pushViewController(PlanetDetailsViewController, animated: true)
+        planetDetailsViewController.viewModel = planetDetailsViewModel
+        navigationController.pushViewController(planetDetailsViewController, animated: true)
     }
     
     func goBack() {

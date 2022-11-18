@@ -51,6 +51,11 @@
 		ACCD9FDA29262EA800A5A8A3 /* PlanetListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9FD829262EA800A5A8A3 /* PlanetListingTableViewCell.xib */; };
 		ACCD9FDD2926730F00A5A8A3 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9FDB2926730F00A5A8A3 /* OpenSans-Regular.ttf */; };
 		ACCD9FDE2926730F00A5A8A3 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9FDC2926730F00A5A8A3 /* OpenSans-SemiBold.ttf */; };
+		ACCD9FE229276C3100A5A8A3 /* AppApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FE129276C3100A5A8A3 /* AppApiClientMock.swift */; };
+		ACCD9FE429276D3500A5A8A3 /* UseCasesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FE329276D3500A5A8A3 /* UseCasesMock.swift */; };
+		ACCD9FE729276E5B00A5A8A3 /* planet_results.json in Resources */ = {isa = PBXBuildFile; fileRef = ACCD9FE629276E5B00A5A8A3 /* planet_results.json */; };
+		ACCD9FEE2927770B00A5A8A3 /* UseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FED2927770B00A5A8A3 /* UseCasesTests.swift */; };
+		ACCD9FF02927774B00A5A8A3 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD9FEF2927774B00A5A8A3 /* TestUtils.swift */; };
 		C7971ECBEC9C40A210876B24 /* Pods_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67077E6CCE5859CBCDB15CD2 /* Pods_Assignment.framework */; };
 		D1F01C5D7F9866B7499CA02C /* Pods_Assignment_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDE095EDD68B221D51BBB2A /* Pods_Assignment_AssignmentUITests.framework */; };
 		ED9779ADB50C15C7587B3AFE /* Pods_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A099146059C42C0613873C /* Pods_AssignmentTests.framework */; };
@@ -127,6 +132,11 @@
 		ACCD9FD829262EA800A5A8A3 /* PlanetListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetListingTableViewCell.xib; sourceTree = "<group>"; };
 		ACCD9FDB2926730F00A5A8A3 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		ACCD9FDC2926730F00A5A8A3 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		ACCD9FE129276C3100A5A8A3 /* AppApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppApiClientMock.swift; sourceTree = "<group>"; };
+		ACCD9FE329276D3500A5A8A3 /* UseCasesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesMock.swift; sourceTree = "<group>"; };
+		ACCD9FE629276E5B00A5A8A3 /* planet_results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planet_results.json; sourceTree = "<group>"; };
+		ACCD9FED2927770B00A5A8A3 /* UseCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesTests.swift; sourceTree = "<group>"; };
+		ACCD9FEF2927774B00A5A8A3 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 		ADDE095EDD68B221D51BBB2A /* Pods_Assignment_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90126D825F70C51F72585E8 /* Pods-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Assignment/Pods-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		DAFE9F54230AE55EC8C3F3D2 /* Pods-Assignment-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Assignment-AssignmentUITests/Pods-Assignment-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,16 +196,16 @@
 		AC03E0E82924C755000B6629 /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				ACCD9FA729261D9300A5A8A3 /* UI */,
-				ACCD9FA2292616A300A5A8A3 /* Extensions */,
+				AC03E14329255851000B6629 /* App */,
 				AC03E1522925F206000B6629 /* Domain */,
 				AC03E1492925E5B7000B6629 /* Networking */,
-				AC03E14329255851000B6629 /* App */,
-				AC03E12A2925466E000B6629 /* Resources */,
+				ACCD9FA729261D9300A5A8A3 /* UI */,
 				AC03E1232924D0D5000B6629 /* Scenes */,
+				ACCD9FA2292616A300A5A8A3 /* Extensions */,
+				AC03E12A2925466E000B6629 /* Resources */,
+				ACCD9FDF2927673000A5A8A3 /* Utils */,
 				AC03E0F42924C757000B6629 /* LaunchScreen.storyboard */,
 				AC03E0F72924C757000B6629 /* Info.plist */,
-				ACCD9FD229262C2300A5A8A3 /* ErrorTracker.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -203,7 +213,10 @@
 		AC03E0FF2924C757000B6629 /* AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD9FEC292776F700A5A8A3 /* UseCases */,
+				ACCD9FE029276C0800A5A8A3 /* Mocks */,
 				AC03E1002924C757000B6629 /* AssignmentTests.swift */,
+				ACCD9FEF2927774B00A5A8A3 /* TestUtils.swift */,
 			);
 			path = AssignmentTests;
 			sourceTree = "<group>";
@@ -393,6 +406,40 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		ACCD9FDF2927673000A5A8A3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FD229262C2300A5A8A3 /* ErrorTracker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ACCD9FE029276C0800A5A8A3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FE529276DBC00A5A8A3 /* Responses */,
+				ACCD9FE129276C3100A5A8A3 /* AppApiClientMock.swift */,
+				ACCD9FE329276D3500A5A8A3 /* UseCasesMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		ACCD9FE529276DBC00A5A8A3 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FE629276E5B00A5A8A3 /* planet_results.json */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		ACCD9FEC292776F700A5A8A3 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD9FED2927770B00A5A8A3 /* UseCasesTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		F273C00F954ED13CFE15F8E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +494,7 @@
 				AC03E0F82924C757000B6629 /* Sources */,
 				AC03E0F92924C757000B6629 /* Frameworks */,
 				AC03E0FA2924C757000B6629 /* Resources */,
+				40EB70623901B89688D6089F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -542,6 +590,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCD9FE729276E5B00A5A8A3 /* planet_results.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +624,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40EB70623901B89688D6089F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssignmentTests/Pods-AssignmentTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssignmentTests/Pods-AssignmentTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssignmentTests/Pods-AssignmentTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8AFC7A6DF5FF62D36A412BE7 /* [CP] Check Pods Manifest.lock */ = {
@@ -720,6 +786,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC03E1012924C757000B6629 /* AssignmentTests.swift in Sources */,
+				ACCD9FEE2927770B00A5A8A3 /* UseCasesTests.swift in Sources */,
+				ACCD9FE229276C3100A5A8A3 /* AppApiClientMock.swift in Sources */,
+				ACCD9FF02927774B00A5A8A3 /* TestUtils.swift in Sources */,
+				ACCD9FE429276D3500A5A8A3 /* UseCasesMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

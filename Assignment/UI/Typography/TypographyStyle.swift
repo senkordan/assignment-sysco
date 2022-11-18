@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// enum of typography styles
 enum TypographyStyle {
     case Heading
     case SubHeading
